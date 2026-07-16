@@ -19,7 +19,4 @@ jobs:
         run: mvn clean package
       - name: install aws cli
         run: |
-          sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          sudo apt install unzip curl -y
-          sudo unzip awscliv2.zip
-          sudo ./aws/install
+          aws --version
